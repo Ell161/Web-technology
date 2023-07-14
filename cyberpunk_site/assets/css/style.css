@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Cyberpunk";
+  src: url(../fonts/Cyberpunk.ttf);
+}
+
+html {
+  color: black;
+}
+
+body {
+  font-family: "Cyberpunk", sans-serif;
+  color: #F58EFF;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-family: "Cyberpunk", sans-serif;
+  color: black;
+  margin: 0;
+}
+
+p {
+  font-family: "Cyberpunk", sans-serif;
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 1em;
+  list-style: none;
+}
+
+ul:not(:last-child) {
+  margin: 0 2em 1em 0;
+}
+
+a {
+    color: black;
+  transition: all 0.3s ease-in 0s;
+}
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+  outline: 0;
+}
+
+a:focus,
+a:hover {
+  color: #F241FF;
+  text-shadow: 2px 3px 2px #53025a;
+}
+
+*:focus {
+  outline: none;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.header-block {
+    width: 100%;
+    background-color: #242424;
+    box-shadow:
+    inset
+      0 0  0 1px rgb(0, 0, 0), 
+      0 -3em 3em rgba(0,0,0,0.1),
+      0 0  0 1px rgb(0, 0, 0),
+      0.3em 0.3em 1em rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+}
+
+.home-link {
+  display: block;
+  font-size: 36px;
+  padding: 20px 0;
+  text-shadow: 2px 3px 2px #F58EFF;
+
+}
+
+body {
+  background: linear-gradient( rgba(59, 1, 59, 0.6), rgba(0, 0, 0, 0.8) ), url("../img/back-1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.about {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 35px;
+  text-align: center;
+}
+
+.h1-about {
+  font-size: 40px;
+  text-shadow: 2px 3px 2px #53025a;
+}
+
+.p-about {
+  text-shadow: 2px 3px 2px #53025a;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.galery-art {
+  width: 47%;
+  height: 540px;
+  margin-bottom: 20px;
+}
+
+.galery-art:last-child {
+  margin: 0;
+}
+
+
+.image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
